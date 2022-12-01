@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon.png" type="image/x-icon">
+    <title>Fexible image and Responsiveness</title>
+
+</head>
+<body>
+    <img src="unsamples/4.jpg" alt="house" srcset="unsamples/1.jpg 480w, /unsamples/3.jpg 800w, /unsamples/2.jpg 1200w"
+      sizes="(max-width: 480px) 240px,(max-width: 960px) 480px,(max-width: 1440px) 960px"
+      ></img>
+    <picture>
+        <source media="(max-width: 600px)" srcset="unsamples/10.jpg">
+        <source media="(max-width: 900px)" srcset="unsamples/6.jpg">
+        <img src="unsamples/7.jpg" alt="">
+    </picture>
+
+    <!--Image Mapping-->
+    <img src="unsamples/8.jpg" alt="workspace" usemap="#workspace">
+
+    <map name="workspace">
+        <area shape="rect" coords="34,44,270,350" href="class4-Lists-CipherSchools.html" alt="Computer">
+        <area shape="rect" coords="290,172,333,250" href="class10-Weird Characters-CipherSchools.html" alt="Phone">
+        <area shape="rect" coords="337,300,44" href="class11-Links-CipherSchools.html" alt="cup">
+    </map>
+
+</body>
+</html>
